@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var csso = require('gulp-csso');
-var concatCss = require('gulp-concat-css'); 
+var concatCss = require('gulp-concat-css');
 var connect = require('gulp-connect');
-var  includer = require('gulp-htmlincluder');
+var  htmlincluder = require('gulp-htmlincluder');
 var rename = require('gulp-rename');
 var htmlmin = require('gulp-htmlmin');
 
@@ -41,7 +41,7 @@ gulp.task('move', function(){
 
 gulp.task('css', function(){
 	gulp.src('dev/assets/css/*.css')
-		.pipe(concat_css())
+        .pipe(concatCss("css/mystyle.css"))
 		.pipe(csso('css/mystyle.css'))
 		.pipe(gulp.dest('build/'))
 		.pipe(connect.reload());
