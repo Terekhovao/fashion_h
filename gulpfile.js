@@ -5,6 +5,7 @@ var connect = require('gulp-connect');
 var  htmlincluder = require('gulp-htmlincluder');
 var rename = require('gulp-rename');
 var htmlmin = require('gulp-htmlmin');
+var sourcemaps = require("gulp-sourcemaps");
 
 
 
@@ -41,8 +42,10 @@ gulp.task('move', function(){
 
 gulp.task('css', function(){
 	gulp.src('dev/assets/css/*.css')
+		.pipe(sourcemaps.init())
         .pipe(concatCss("css/mystyle.css"))
 		.pipe(csso('css/mystyle.css'))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/'))
 		.pipe(connect.reload());
 });
