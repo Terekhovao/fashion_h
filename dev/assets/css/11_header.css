@@ -1,18 +1,24 @@
+.header-line {
+    height: 40px;
+    background-color: #43c6a9;
+    /*margin-bottom: 45px;*/
 
-header-line{
-    margin-bottom: 22px;
 }
-header-line:after {
-    content: "";
-    display: block;
-    clear: both;
+.header_center_menu {
+    margin-left:340px;
+
+
 }
-header-line:last-child{
-    margin-bottom: 0;
-}
-.logo {
-    float: left;
-}
-.logo a {
+.header_top_menu ul li{
     display: inline-block;
+    padding: 10px 30px 10px 30px;
+    border-right: 1px solid white;
+    margin: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.header_top_menu a {
+    text-decoration: none;
+    color:white;
 }

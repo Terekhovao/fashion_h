@@ -1,0 +1,51 @@
+.articles_content_left_sidebar {
+    width:800px;
+    background-color: white;
+    padding:25px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.article__top {
+    width:800px;
+}
+.article_title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.article__text {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    width: 742px;
+    height: 80px;
+    overflow: hidden;
+}
+.article_img {
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+}
+.dinamic_right_sidebar {
+    float: right;
+    width:370px;
+    background-color: white;
+    font-size: 16px;
+    height: 390px;
+}
+.btn-main_content {
+    width: 176px;
+    height: 57px;
+    background-color: #2e3944;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 4px solid #7dcfa9;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 23px;
+}
+.article__top>hr {
+    width: 750px;
+    height: 2px;
+    border: 1px dashed gainsboro;
+}
